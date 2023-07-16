@@ -1,0 +1,159 @@
+body{
+    height:1000px;
+}
+.face{
+    position: absolute;
+    top: 35px;
+    left: 0;
+    right: 0;
+    bottom: 150px;
+    margin: auto;
+    height: 40px;
+    width: 65px;
+    background:black;
+    border-radius: 250%;
+}
+.robot-container{
+    position: relative;
+    top: 100px;
+    left: 0px;
+    right:0px;
+    margin: auto;
+    margin-top: 2%;
+            width: 500px;
+            height: 500px;
+            transform-origin: bottom center;
+            
+}
+.head{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 300px;
+    margin: auto;
+    height: 75px;
+    width: 100px;
+    background:white;
+    border-radius: 100%;
+}
+.bod{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    margin: auto;
+    height: 250px;
+    width: 115px;
+    background:white;
+    border-radius: 100%;
+} 
+.left{
+    position: absolute;
+    top: 60px;
+    left: -460px;
+    right: -300px;
+    bottom: 250px;
+    margin: auto;
+    height: 30px;
+    width: 100px;
+    background:white;
+    border-radius: 250%;
+    transform: rotateZ(-45deg);
+}
+.right{
+    position: absolute;
+    top: 0px;
+    left: 90px;
+    right:  0;
+    bottom: 130px;
+    margin: auto;
+    height: 30px;
+    width: 100px;
+    background:white;
+    border-radius: 250%;
+    transform: rotateZ( 45deg);
+}
+.lleft{
+    position: absolute;
+    top: 280px;
+    left: px;
+    right: 50px;
+    bottom: 0;
+    margin: auto;
+    height: 30px;
+    width: 100px;
+    background:white;
+    border-radius: 250%;
+    transform: rotateZ(90deg);
+}
+.lright{
+    position: absolute;
+    top: 280px;
+    left: 50px;
+    right:  0;
+    bottom: 0 ;
+    margin: auto;
+    height: 30px;
+    width: 100px;
+    background:white;
+    border-radius: 250%;
+    transform: rotateZ( 90deg);
+}
+.eyes1{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 30px;
+    bottom: 150px;
+    margin: auto;
+    background-color:#00ff00;
+    height: 10px;
+    width: 15px;
+    border-radius:50px 50px 20px 50px;
+}
+.eyes2{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    right: 0px;
+    bottom: 150px;
+    margin: auto;
+    background-color:#00ff00;
+    height: 10px;
+    width: 15px;
+    border-radius:20px 20px 50px 20px;
+}
+.robot-container:hover {
+    animation: dance 0.5s ease-in-out infinite;
+}
+@keyframes dance {
+    0%, 100% {
+        transform: translateY(0) rotate(0);
+    }
+    25% {
+        transform: translateY(-20px) rotate(-10deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(10deg);
+    }
+    75% {
+        transform: translateY(-10px) rotate(-5deg);
+    }
+}
+.mydiv {
+    width:100%;
+    height:100%;
+    color:black;
+    font-weight:bold;
+    animation: myanimation 10s infinite;
+  }
+  
+  @keyframes myanimation {
+    0% {background-color: red;}
+    25%{background-color:yellow;}
+    50%{background-color:green;}
+    75%{background-color:brown;}
+    100% {background-color: red;}
+  }
